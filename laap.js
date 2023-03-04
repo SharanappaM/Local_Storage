@@ -9,7 +9,7 @@ btn.onclick=function()
     const value=inputvalue.value;
 
 
-    if (key && value) //save data to local storage
+    if (key && value)
     {
         localStorage.setItem(key,value)//save data to local storage
         location.reload()
