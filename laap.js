@@ -20,6 +20,7 @@ for(i=0;i<localStorage.length;i++)
     const k=localStorage.key(i);
     const v=localStorage.getItem(k);
 
-    output.innerHTML+=`${k}: ${v} <br>`
+     output.innerHTML+=`${k}: ${v} <br>`
+    
 
 }
