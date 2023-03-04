@@ -11,14 +11,14 @@ btn.onclick=function()
 
     if (key && value)
     {
-        localStorage.setItem(key,value)
+        localStorage.setItem(key,value)//save data to local storage
         location.reload()
     }
 }
 for(i=0;i<localStorage.length;i++)
 {
     const k=localStorage.key(i);
-    const v=localStorage.getItem(k);
+    const v=localStorage.getItem(k);//read the data from local storage
 
      output.innerHTML+=`${k}: ${v} <br>`
     
