@@ -9,7 +9,7 @@ btn.onclick=function()
     const value=inputvalue.value;
 
 
-    if (key && value)
+    if (key && value) //save data to local storage
     {
         localStorage.setItem(key,value)
         location.reload()
@@ -18,7 +18,7 @@ btn.onclick=function()
 for(i=0;i<localStorage.length;i++)
 {
     const k=localStorage.key(i);
-    const v=localStorage.getItem(k);
+    const v=localStorage.getItem(k);//read the data from local storage
 
      output.innerHTML+=`${k}: ${v} <br>`
     
